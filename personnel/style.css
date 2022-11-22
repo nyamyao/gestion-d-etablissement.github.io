@@ -1,0 +1,114 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: arial, sans-serif;
+}
+
+ul{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+	font-size: 1.3rem;
+}
+
+.contenu{
+	width: 100vw;
+	height: 100vh;
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: rgba(34, 193, 195, 0.7);
+	padding: .5rem 2rem;
+}
+/*
+h1::first-letter{
+	color: rgb(34,193,195);
+}*/
+
+h1 i{
+	color: rgb(34,25,255);
+	font-size: 2rem;
+	text-transform: italic;
+}
+
+.navBar ul{
+	display: flex;
+	flex-direction: row;
+	gap: 1.5rem;
+	align-items: center;
+}
+
+.navBar ul li{
+	padding: .5rem .5rem;
+}
+
+.navBar ul li:hover a{
+	color: white;
+}
+
+.navBar ul li:hover{
+	color: white;
+	border-radius: 3px;
+	background-color: rgba(10, 10, 255, .40);
+}
+
+/* table-connection */
+.table-connection{
+	width: 30rem;
+	min-height: 50vh;
+	margin: 5rem auto;
+	padding: 3rem;
+	font-size: 1.3rem;
+	background: rgb(34,193,195);
+	background: linear-gradient(50deg, rgba(34,193,195,1) 0%, rgba(31,179,231,1) 100%);
+}
+
+.table-connection > h5{
+	font-size: 2rem;
+	text-align: center;
+	text-transform: capitalize;
+}
+
+
+.table-connection div{
+	width: 20rem;
+	margin: auto;
+}
+
+input{
+	outline: none;
+	border:none;
+	height: 2rem;
+	border-radius: 3px;
+}
+
+input[type='email'],
+input[type='password']{
+	display: block;
+	width: 20rem;
+	margin: auto;
+	margin-bottom: 1rem;
+}
+
+input[type='submit']{
+	align-items: center;
+	width: 7rem;
+	height: 2rem;
+	color: #fff;
+	font-size: 1.2rem;
+	background-color: rgba(10, 200, 10, 1.0);
+	text-transform: uppercase;
+	margin-top: 1rem;
+	cursor: pointer;
+}
+
+.envoyer{
+	text-align: center;
+}

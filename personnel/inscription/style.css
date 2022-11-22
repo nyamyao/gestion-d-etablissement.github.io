@@ -1,0 +1,214 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: arial, sans-serif;
+}
+
+ul{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+	font-size: 1.3rem;
+}
+
+img{
+	width: 100%;
+	height: 100%;
+}
+
+.contenu{
+	width: 100vw;
+	height: 100vh;
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: rgba(34, 193, 195, 0.7);
+	padding: .5rem 2rem;
+}
+/*
+h1::first-letter{
+	color: rgb(34,193,195);
+}*/
+
+h1 i{
+	color: rgb(34,25,255);
+	font-size: 2rem;
+	text-transform: italic;
+}
+
+.navBar ul{
+	display: flex;
+	flex-direction: row;
+	gap: 1.5rem;
+	align-items: center;
+}
+
+.navBar ul li{
+	padding: .5rem .5rem;
+}
+
+.navBar ul li:hover a{
+	color: white;
+}
+
+.navBar ul li:hover{
+	color: white;
+	border-radius: 3px;
+	background-color: rgba(10, 10, 255, .40);
+}
+
+/* table-connection */
+.table-connection{
+	width: 30rem;
+	min-height: 50vh;
+	margin: 5rem auto;
+	padding: 3rem;
+	font-size: 1.3rem;
+	background: rgb(34,193,195);
+	background: linear-gradient(50deg, rgba(34,193,195,1) 0%, rgba(31,179,231,1) 100%);
+}
+
+.table-connection > h5{
+	font-size: 2rem;
+	text-align: center;
+	text-transform: capitalize;
+}
+
+
+.table-connection div{
+	width: 20rem;
+	margin: auto;
+}
+
+input{
+	outline: none;
+	border:none;
+	height: 2rem;
+	border-radius: 3px;
+}
+
+input[type='email'],
+input[type='password']{
+	display: block;
+	width: 20rem;
+	margin: auto;
+	margin-bottom: 1rem;
+}
+
+input[type='submit']{
+	align-items: center;
+	width: 7rem;
+	height: 2rem;
+	color: #fff;
+	font-size: 1.2rem;
+	background-color: rgba(10, 200, 10, 1.0);
+	text-transform: uppercase;
+	margin-top: 1rem;
+	cursor: pointer;
+}
+
+.envoyer{
+	text-align: center;
+}
+
+/* section css */
+
+.section{
+	width: 100vw;
+	height: auto;
+	background-color: #fff;
+}
+
+.section-01{
+/*	display: flex;*/
+/*	align-items: center;*/
+/*	gap: 2rem;*/
+}
+
+.section-01 > .img{
+	width: 100vw;
+	height: auto;
+}
+
+.section-01 div:nth-child(1){
+	position: absolute;
+	text-align: center;
+	color: #FFF;
+	word-spacing: .5rem;
+	font-weight: 900;
+	font-family: ariale, sans-serif;
+	font-size: 1.2rem;
+}
+
+.section-01 div:nth-child(1) h1{
+	font-size: 2.4rem;
+	margin: 3rem auto;
+}
+
+.section-01 div:nth-child(1) p{
+	width: 70%;
+	margin: auto;
+	text-align: justify;
+	background-color: transparent;
+}
+
+/* img-scroll */
+
+@keyframes box{
+	0%{background-image: url("../images/photo.jfif");}
+	33.33%{background-image: url("../images/cours1.jfif");}
+	66.67%{background-image: url("../images/salle-de-classe1.jfif");}
+	100%{background-image: url("../images/ECOLE1.png");}
+}
+
+.img-scroll{
+	width: calc(100vw - 20rem);
+	height: 20rem;
+	margin: 2rem auto;
+	overflow: hidden;
+	background-color: #dedede;
+	background-size: 100%;
+	animation: box 20s ease-in-out infinite both;
+}
+
+/*.img-scroll div{
+	width: 100%;
+	height: 10rem;
+	display: inline;
+}*/
+
+.mot-directeur{
+	width: 60rem;
+	height: height;
+	margin: auto;
+}
+
+.clearfix{
+	clear: both;
+}
+.mot-directeur div:nth-child(1){
+	width: 30rem;
+	height: auto;
+	float: right;
+	margin-left: 2rem;
+}
+
+.mot-directeur div:nth-child(2){
+	font-size: 1.4rem;
+	font-family: arial, sans-serif;
+	text-align: justify;
+}
+
+/* section temoignage parent */
+
+.parent{
+	width: 70%;
+	height: 20rem;
+}
